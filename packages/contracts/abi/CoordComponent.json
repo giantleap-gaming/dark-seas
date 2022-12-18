@@ -1,0 +1,988 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "world",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "BareComponent__NotImplemented",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "writer",
+          "type": "address"
+        }
+      ],
+      "name": "authorizeWriter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getEntities",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "value",
+          "type": "bytes"
+        }
+      ],
+      "name": "getEntitiesWithValue",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "int32",
+              "name": "x",
+              "type": "int32"
+            },
+            {
+              "internalType": "int32",
+              "name": "y",
+              "type": "int32"
+            }
+          ],
+          "internalType": "struct Coord",
+          "name": "coord",
+          "type": "tuple"
+        }
+      ],
+      "name": "getEntitiesWithValue",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRawValue",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getSchema",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "keys",
+          "type": "string[]"
+        },
+        {
+          "internalType": "enum LibTypes.SchemaValue[]",
+          "name": "values",
+          "type": "uint8[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "getValue",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "int32",
+              "name": "x",
+              "type": "int32"
+            },
+            {
+              "internalType": "int32",
+              "name": "y",
+              "type": "int32"
+            }
+          ],
+          "internalType": "struct Coord",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "has",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "id",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "indexer",
+          "type": "address"
+        }
+      ],
+      "name": "registerIndexer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_world",
+          "type": "address"
+        }
+      ],
+      "name": "registerWorld",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "value",
+          "type": "bytes"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "int32",
+              "name": "x",
+              "type": "int32"
+            },
+            {
+              "internalType": "int32",
+              "name": "y",
+              "type": "int32"
+            }
+          ],
+          "internalType": "struct Coord",
+          "name": "value",
+          "type": "tuple"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "writer",
+          "type": "address"
+        }
+      ],
+      "name": "unauthorizeWriter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "world",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "writeAccess",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "methodIdentifiers": {
+    "authorizeWriter(address)": "4fef6a38",
+    "getEntities()": "31b933b9",
+    "getEntitiesWithValue((int32,int32))": "bf3bf26a",
+    "getEntitiesWithValue(bytes)": "b361be46",
+    "getRawValue(uint256)": "b8bc073d",
+    "getSchema()": "6b122fe0",
+    "getValue(uint256)": "0ff4c916",
+    "has(uint256)": "cccf7a8e",
+    "id()": "af640d0f",
+    "owner()": "8da5cb5b",
+    "registerIndexer(address)": "75c0669c",
+    "registerWorld(address)": "9d2c76b4",
+    "remove(uint256)": "4cc82215",
+    "set(uint256,(int32,int32))": "dcb14c2f",
+    "set(uint256,bytes)": "8b282947",
+    "transferOwnership(address)": "f2fde38b",
+    "unauthorizeWriter(address)": "bf4fe57e",
+    "world()": "30b67baa",
+    "writeAccess(address)": "861eb905"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"world\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"BareComponent__NotImplemented\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"writer\",\"type\":\"address\"}],\"name\":\"authorizeWriter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getEntities\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"value\",\"type\":\"bytes\"}],\"name\":\"getEntitiesWithValue\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"int32\",\"name\":\"x\",\"type\":\"int32\"},{\"internalType\":\"int32\",\"name\":\"y\",\"type\":\"int32\"}],\"internalType\":\"struct Coord\",\"name\":\"coord\",\"type\":\"tuple\"}],\"name\":\"getEntitiesWithValue\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"getRawValue\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSchema\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"keys\",\"type\":\"string[]\"},{\"internalType\":\"enum LibTypes.SchemaValue[]\",\"name\":\"values\",\"type\":\"uint8[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"getValue\",\"outputs\":[{\"components\":[{\"internalType\":\"int32\",\"name\":\"x\",\"type\":\"int32\"},{\"internalType\":\"int32\",\"name\":\"y\",\"type\":\"int32\"}],\"internalType\":\"struct Coord\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"has\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"id\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"indexer\",\"type\":\"address\"}],\"name\":\"registerIndexer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_world\",\"type\":\"address\"}],\"name\":\"registerWorld\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"remove\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"value\",\"type\":\"bytes\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"int32\",\"name\":\"x\",\"type\":\"int32\"},{\"internalType\":\"int32\",\"name\":\"y\",\"type\":\"int32\"}],\"internalType\":\"struct Coord\",\"name\":\"value\",\"type\":\"tuple\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"writer\",\"type\":\"address\"}],\"name\":\"unauthorizeWriter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"world\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"writeAccess\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"authorizeWriter(address)\":{\"params\":{\"writer\":\"Address to grant write access to.\"}},\"getRawValue(uint256)\":{\"params\":{\"entity\":\"Entity to get the raw value in this component for.\"}},\"has(uint256)\":{\"params\":{\"entity\":\"Entity to check whether it has a value in this component for.\"}},\"registerWorld(address)\":{\"params\":{\"_world\":\"Address of the World contract.\"}},\"remove(uint256)\":{\"params\":{\"entity\":\"Entity to remove from this component.\"}},\"set(uint256,bytes)\":{\"params\":{\"entity\":\"Entity to set the value for.\",\"value\":\"Value to set for the given entity.\"}},\"transferOwnership(address)\":{\"params\":{\"newOwner\":\"Address of the new owner.\"}},\"unauthorizeWriter(address)\":{\"params\":{\"writer\":\"Address to revoke write access .\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"authorizeWriter(address)\":{\"notice\":\"Grant write access to this component to the given address. Can only be called by the owner of this component.\"},\"getRawValue(uint256)\":{\"notice\":\"Get the raw (abi-encoded) value of the given entity in this component.\"},\"getSchema()\":{\"notice\":\"Return the keys and value types of the schema of this component.\"},\"has(uint256)\":{\"notice\":\"Check whether the given entity has a value in this component.\"},\"id()\":{\"notice\":\"Public identifier of this component \"},\"owner()\":{\"notice\":\"Get the owner of this component \"},\"registerWorld(address)\":{\"notice\":\"Register this component in the given world.\"},\"remove(uint256)\":{\"notice\":\"Remove the given entity from this component. Registers the update in the World contract. Can only be called by addresses with write access to this component.\"},\"set(uint256,bytes)\":{\"notice\":\"Set the given component value for the given entity. Registers the update in the World contract. Can only be called by addresses with write access to this component.\"},\"transferOwnership(address)\":{\"notice\":\"Transfer ownership of this component to a new owner. Can only be called by the current owner.\"},\"unauthorizeWriter(address)\":{\"notice\":\"Revoke write access to this component to the given address. Can only be called by the owner of this component.\"},\"world()\":{\"notice\":\"Reference to the World contract this component is registered in \"},\"writeAccess(address)\":{\"notice\":\"Addresses with write access to this component \"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"../../node_modules/@latticexyz/std-contracts/src/components/CoordComponent.sol\":\"CoordComponent\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@latticexyz/=../../node_modules/@latticexyz/\",\":@manifoldxyz/=../../node_modules/@manifoldxyz/\",\":@opengsn/=../../node_modules/@opengsn/\",\":@openzeppelin/=../../node_modules/openzeppelin-solidity/\",\":@rari-capital/=../../node_modules/@rari-capital/\",\":base64-sol/=../../node_modules/base64-sol/\",\":base64/=../../node_modules/base64-sol/\",\":ds-test/=../../node_modules/ds-test/src/\",\":forge-std/=../../node_modules/forge-std/src/\",\":gsn/=../../node_modules/@opengsn/contracts/src/\",\":hardhat/=../../node_modules/hardhat/\",\":memmove/=../../node_modules/memmove/src/\",\":openzeppelin-solidity/=../../node_modules/openzeppelin-solidity/\",\":royalty-registry/=../../node_modules/@manifoldxyz/royalty-registry-solidity/contracts/\",\":solecs/=../../node_modules/@latticexyz/solecs/src/\",\":solidity-trigonometry/=/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/solidity-trigonometry/src/\",\":solmate/=../../node_modules/@rari-capital/solmate/src/\",\":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/\",\":trig/=../../node_modules/solidity-trigonometry/\"]},\"sources\":{\"../../node_modules/@latticexyz/solecs/src/BareComponent.sol\":{\"keccak256\":\"0x6bcf91e0aefc58fa9518f096dc643c8fb4a3b1338e0293212f3b784e372c2c3c\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://ec9db844be7aa5b15b0116ac4d9f63f4bf7fc558f3e7ed6f9cebff23fc1b1d78\",\"dweb:/ipfs/QmV3MFWfvP6ioAdt8vKzDK5UaTPMLNq9h56UG3ZpUL61Cy\"]},\"../../node_modules/@latticexyz/solecs/src/Component.sol\":{\"keccak256\":\"0x032b711b2b56ad847141a92257692444a53d0eff1c9c5b6de08df18f508cd3b8\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://6db3639eef0f5461853b2f4cff1e8b647e6143f77f97aa01c433cff5b425a20d\",\"dweb:/ipfs/QmQ5QpZjtFHQcjUkJvW5rQCbK9Hv2LmiLHWdbpwa7sD6Uq\"]},\"../../node_modules/@latticexyz/solecs/src/LibTypes.sol\":{\"keccak256\":\"0xd75f7055d9c877aca922804806e39cabc6c4fc324ebf3708d0f79abc3d00be96\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://a4c61404cc167a0bac24effbd7768e2eb8ce250b6b7e000bde3523b97702321b\",\"dweb:/ipfs/QmYTwkL3U68CLk1xUCHRXbCkUnNtFpzd3EAgduN7PePp9Y\"]},\"../../node_modules/@latticexyz/solecs/src/MapSet.sol\":{\"keccak256\":\"0x32675ca593af71c0a5f6bfd7c6c1a4fde3b0da8b2e23165e330a6138544179e3\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://6c62545d52730586d0306957155b51697b625f60f4018b9311538504788f9ca4\",\"dweb:/ipfs/Qmcq4aNeucaczt8RdCpWuxKirrRiNsjxfD8MS3cJbU54or\"]},\"../../node_modules/@latticexyz/solecs/src/Set.sol\":{\"keccak256\":\"0x4dbbbd5bbc5843bb1a2e4f54c0f9554b4d4f1dfa1387ed915b264cb0b06d8fc1\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://56bda9a5f4a0a8de25f92763eaafd40d01643b463a3710c15c818bff7fb7ae2f\",\"dweb:/ipfs/QmUgkSjUfCrMmncZaTz9QbWXm7xur9MMXhfoamr2bwZCUs\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol\":{\"keccak256\":\"0x1d6dfb6b170bc1f93b57feae086659ba7c8d816a4cdfd27d7dcb2726e25deed0\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://e6c0a7e50370bc4c6ee78ee2e84eddea44ff5f2ecd3da3d7001de31d54b68e30\",\"dweb:/ipfs/QmTT4gv4ennvHErXZ7ZCiVDyEeznY3y51fAvZ8h8HvrnzU\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IEntityContainer.sol\":{\"keccak256\":\"0x95ae0340082f859c0c31108323048c4d179a28df905ba8384f7ab8dd95d2d6a0\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://cbc49eba9e6b4eb603d2ae4189a83b8c9f0b858cd4236c94ebd23b8b06817378\",\"dweb:/ipfs/QmcTePiUxaua9NrUYWKPNMMPyaCxH1rMtniFkrSkTpwBak\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IEntityIndexer.sol\":{\"keccak256\":\"0xd6ca557fd8afe2f16679c67857affc55eb237dbc942a6390097122c65a19a52e\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://a1ea4345f6064267ed8ab657c945407d3c172e019664fe8ecdd069b1b7b44684\",\"dweb:/ipfs/QmNPv69EEjhA6dv1nC7VHv4JMb35Aop3We52QB5CaAGheF\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IOwned.sol\":{\"keccak256\":\"0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82\",\"dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol\":{\"keccak256\":\"0x8846ddb1701b59f8cbf80225ea8e85bd2991ab6ee0515c011d79a265f47f93fe\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://959ba1dcc93439c82e53a1e9858bac831a3c003eae82fc35edd931d7e7da4f77\",\"dweb:/ipfs/QmQu2vGG9bDpuTHYJNSW6aXCp4FYCVzew2XpjVjZm59CAx\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IWorld.sol\":{\"keccak256\":\"0x3ec039b9b7946f2220dec9be1dc109f440405d78d26069d2ace759fd2f8b9c92\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://7ed943cc164b14f0fd82e6fdb9e300c6ad01a3e7a19caa9f2599f0378e30f48e\",\"dweb:/ipfs/QmfBXbWSdPbZzRQWpBqQqGBMq7owhZ15hxnrk9J7qjBaMA\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/Query.sol\":{\"keccak256\":\"0x3956cfb4b92afd3eccfea772480deb00ba573629bc0f36db5d948e2d168377cb\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://1aafe610e9283e1d7b1f45ba49cf77c8cf770241eeaa5317171df30b5f114c7d\",\"dweb:/ipfs/QmYShHHJqSfkdY3vcbKS18AuBpBmfwMUzebxZbPpgZDcfq\"]},\"../../node_modules/@latticexyz/std-contracts/src/components/CoordComponent.sol\":{\"keccak256\":\"0xd026ba13fc59ce6a8ee54fbaacd7259f5e4ccd876d41041c3bcc1def5d43027c\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://605fbc8f702b88d5d06b3ab515f3d513eeb326a01df92cabd08ff6249c946d4b\",\"dweb:/ipfs/QmW23N8JZGGpABG4vVkJmvWxuV2isdu564H8kvuJ75w4Xo\"]},\"../../node_modules/memmove/src/Array.sol\":{\"keccak256\":\"0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1\",\"dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ\"]},\"../../node_modules/memmove/src/LinkedList.sol\":{\"keccak256\":\"0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598\",\"dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "world",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "BareComponent__NotImplemented"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "writer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "authorizeWriter"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntities",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntitiesWithValue",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct Coord",
+              "name": "coord",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "int32",
+                  "name": "x",
+                  "type": "int32"
+                },
+                {
+                  "internalType": "int32",
+                  "name": "y",
+                  "type": "int32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntitiesWithValue",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getRawValue",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getSchema",
+          "outputs": [
+            {
+              "internalType": "string[]",
+              "name": "keys",
+              "type": "string[]"
+            },
+            {
+              "internalType": "enum LibTypes.SchemaValue[]",
+              "name": "values",
+              "type": "uint8[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getValue",
+          "outputs": [
+            {
+              "internalType": "struct Coord",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "int32",
+                  "name": "x",
+                  "type": "int32"
+                },
+                {
+                  "internalType": "int32",
+                  "name": "y",
+                  "type": "int32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "has",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "id",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "indexer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "registerIndexer"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_world",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "registerWorld"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "remove"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "set"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "struct Coord",
+              "name": "value",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "int32",
+                  "name": "x",
+                  "type": "int32"
+                },
+                {
+                  "internalType": "int32",
+                  "name": "y",
+                  "type": "int32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "set"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "writer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "unauthorizeWriter"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "world",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "writeAccess",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "authorizeWriter(address)": {
+            "params": {
+              "writer": "Address to grant write access to."
+            }
+          },
+          "getRawValue(uint256)": {
+            "params": {
+              "entity": "Entity to get the raw value in this component for."
+            }
+          },
+          "has(uint256)": {
+            "params": {
+              "entity": "Entity to check whether it has a value in this component for."
+            }
+          },
+          "registerWorld(address)": {
+            "params": {
+              "_world": "Address of the World contract."
+            }
+          },
+          "remove(uint256)": {
+            "params": {
+              "entity": "Entity to remove from this component."
+            }
+          },
+          "set(uint256,bytes)": {
+            "params": {
+              "entity": "Entity to set the value for.",
+              "value": "Value to set for the given entity."
+            }
+          },
+          "transferOwnership(address)": {
+            "params": {
+              "newOwner": "Address of the new owner."
+            }
+          },
+          "unauthorizeWriter(address)": {
+            "params": {
+              "writer": "Address to revoke write access ."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "authorizeWriter(address)": {
+            "notice": "Grant write access to this component to the given address. Can only be called by the owner of this component."
+          },
+          "getRawValue(uint256)": {
+            "notice": "Get the raw (abi-encoded) value of the given entity in this component."
+          },
+          "getSchema()": {
+            "notice": "Return the keys and value types of the schema of this component."
+          },
+          "has(uint256)": {
+            "notice": "Check whether the given entity has a value in this component."
+          },
+          "id()": {
+            "notice": "Public identifier of this component "
+          },
+          "owner()": {
+            "notice": "Get the owner of this component "
+          },
+          "registerWorld(address)": {
+            "notice": "Register this component in the given world."
+          },
+          "remove(uint256)": {
+            "notice": "Remove the given entity from this component. Registers the update in the World contract. Can only be called by addresses with write access to this component."
+          },
+          "set(uint256,bytes)": {
+            "notice": "Set the given component value for the given entity. Registers the update in the World contract. Can only be called by addresses with write access to this component."
+          },
+          "transferOwnership(address)": {
+            "notice": "Transfer ownership of this component to a new owner. Can only be called by the current owner."
+          },
+          "unauthorizeWriter(address)": {
+            "notice": "Revoke write access to this component to the given address. Can only be called by the owner of this component."
+          },
+          "world()": {
+            "notice": "Reference to the World contract this component is registered in "
+          },
+          "writeAccess(address)": {
+            "notice": "Addresses with write access to this component "
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@latticexyz/=../../node_modules/@latticexyz/",
+        ":@manifoldxyz/=../../node_modules/@manifoldxyz/",
+        ":@opengsn/=../../node_modules/@opengsn/",
+        ":@openzeppelin/=../../node_modules/openzeppelin-solidity/",
+        ":@rari-capital/=../../node_modules/@rari-capital/",
+        ":base64-sol/=../../node_modules/base64-sol/",
+        ":base64/=../../node_modules/base64-sol/",
+        ":ds-test/=../../node_modules/ds-test/src/",
+        ":forge-std/=../../node_modules/forge-std/src/",
+        ":gsn/=../../node_modules/@opengsn/contracts/src/",
+        ":hardhat/=../../node_modules/hardhat/",
+        ":memmove/=../../node_modules/memmove/src/",
+        ":openzeppelin-solidity/=../../node_modules/openzeppelin-solidity/",
+        ":royalty-registry/=../../node_modules/@manifoldxyz/royalty-registry-solidity/contracts/",
+        ":solecs/=../../node_modules/@latticexyz/solecs/src/",
+        ":solidity-trigonometry/=/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/solidity-trigonometry/src/",
+        ":solmate/=../../node_modules/@rari-capital/solmate/src/",
+        ":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/",
+        ":trig/=../../node_modules/solidity-trigonometry/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "../../node_modules/@latticexyz/std-contracts/src/components/CoordComponent.sol": "CoordComponent"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../../node_modules/@latticexyz/solecs/src/BareComponent.sol": {
+        "keccak256": "0x6bcf91e0aefc58fa9518f096dc643c8fb4a3b1338e0293212f3b784e372c2c3c",
+        "urls": [
+          "bzz-raw://ec9db844be7aa5b15b0116ac4d9f63f4bf7fc558f3e7ed6f9cebff23fc1b1d78",
+          "dweb:/ipfs/QmV3MFWfvP6ioAdt8vKzDK5UaTPMLNq9h56UG3ZpUL61Cy"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/Component.sol": {
+        "keccak256": "0x032b711b2b56ad847141a92257692444a53d0eff1c9c5b6de08df18f508cd3b8",
+        "urls": [
+          "bzz-raw://6db3639eef0f5461853b2f4cff1e8b647e6143f77f97aa01c433cff5b425a20d",
+          "dweb:/ipfs/QmQ5QpZjtFHQcjUkJvW5rQCbK9Hv2LmiLHWdbpwa7sD6Uq"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/LibTypes.sol": {
+        "keccak256": "0xd75f7055d9c877aca922804806e39cabc6c4fc324ebf3708d0f79abc3d00be96",
+        "urls": [
+          "bzz-raw://a4c61404cc167a0bac24effbd7768e2eb8ce250b6b7e000bde3523b97702321b",
+          "dweb:/ipfs/QmYTwkL3U68CLk1xUCHRXbCkUnNtFpzd3EAgduN7PePp9Y"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/MapSet.sol": {
+        "keccak256": "0x32675ca593af71c0a5f6bfd7c6c1a4fde3b0da8b2e23165e330a6138544179e3",
+        "urls": [
+          "bzz-raw://6c62545d52730586d0306957155b51697b625f60f4018b9311538504788f9ca4",
+          "dweb:/ipfs/Qmcq4aNeucaczt8RdCpWuxKirrRiNsjxfD8MS3cJbU54or"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/Set.sol": {
+        "keccak256": "0x4dbbbd5bbc5843bb1a2e4f54c0f9554b4d4f1dfa1387ed915b264cb0b06d8fc1",
+        "urls": [
+          "bzz-raw://56bda9a5f4a0a8de25f92763eaafd40d01643b463a3710c15c818bff7fb7ae2f",
+          "dweb:/ipfs/QmUgkSjUfCrMmncZaTz9QbWXm7xur9MMXhfoamr2bwZCUs"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol": {
+        "keccak256": "0x1d6dfb6b170bc1f93b57feae086659ba7c8d816a4cdfd27d7dcb2726e25deed0",
+        "urls": [
+          "bzz-raw://e6c0a7e50370bc4c6ee78ee2e84eddea44ff5f2ecd3da3d7001de31d54b68e30",
+          "dweb:/ipfs/QmTT4gv4ennvHErXZ7ZCiVDyEeznY3y51fAvZ8h8HvrnzU"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/interfaces/IEntityContainer.sol": {
+        "keccak256": "0x95ae0340082f859c0c31108323048c4d179a28df905ba8384f7ab8dd95d2d6a0",
+        "urls": [
+          "bzz-raw://cbc49eba9e6b4eb603d2ae4189a83b8c9f0b858cd4236c94ebd23b8b06817378",
+          "dweb:/ipfs/QmcTePiUxaua9NrUYWKPNMMPyaCxH1rMtniFkrSkTpwBak"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/interfaces/IEntityIndexer.sol": {
+        "keccak256": "0xd6ca557fd8afe2f16679c67857affc55eb237dbc942a6390097122c65a19a52e",
+        "urls": [
+          "bzz-raw://a1ea4345f6064267ed8ab657c945407d3c172e019664fe8ecdd069b1b7b44684",
+          "dweb:/ipfs/QmNPv69EEjhA6dv1nC7VHv4JMb35Aop3We52QB5CaAGheF"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/interfaces/IOwned.sol": {
+        "keccak256": "0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b",
+        "urls": [
+          "bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82",
+          "dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol": {
+        "keccak256": "0x8846ddb1701b59f8cbf80225ea8e85bd2991ab6ee0515c011d79a265f47f93fe",
+        "urls": [
+          "bzz-raw://959ba1dcc93439c82e53a1e9858bac831a3c003eae82fc35edd931d7e7da4f77",
+          "dweb:/ipfs/QmQu2vGG9bDpuTHYJNSW6aXCp4FYCVzew2XpjVjZm59CAx"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/interfaces/IWorld.sol": {
+        "keccak256": "0x3ec039b9b7946f2220dec9be1dc109f440405d78d26069d2ace759fd2f8b9c92",
+        "urls": [
+          "bzz-raw://7ed943cc164b14f0fd82e6fdb9e300c6ad01a3e7a19caa9f2599f0378e30f48e",
+          "dweb:/ipfs/QmfBXbWSdPbZzRQWpBqQqGBMq7owhZ15hxnrk9J7qjBaMA"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/solecs/src/interfaces/Query.sol": {
+        "keccak256": "0x3956cfb4b92afd3eccfea772480deb00ba573629bc0f36db5d948e2d168377cb",
+        "urls": [
+          "bzz-raw://1aafe610e9283e1d7b1f45ba49cf77c8cf770241eeaa5317171df30b5f114c7d",
+          "dweb:/ipfs/QmYShHHJqSfkdY3vcbKS18AuBpBmfwMUzebxZbPpgZDcfq"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/@latticexyz/std-contracts/src/components/CoordComponent.sol": {
+        "keccak256": "0xd026ba13fc59ce6a8ee54fbaacd7259f5e4ccd876d41041c3bcc1def5d43027c",
+        "urls": [
+          "bzz-raw://605fbc8f702b88d5d06b3ab515f3d513eeb326a01df92cabd08ff6249c946d4b",
+          "dweb:/ipfs/QmW23N8JZGGpABG4vVkJmvWxuV2isdu564H8kvuJ75w4Xo"
+        ],
+        "license": "Unlicense"
+      },
+      "../../node_modules/memmove/src/Array.sol": {
+        "keccak256": "0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515",
+        "urls": [
+          "bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1",
+          "dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ"
+        ],
+        "license": "MIT"
+      },
+      "../../node_modules/memmove/src/LinkedList.sol": {
+        "keccak256": "0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1",
+        "urls": [
+          "bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598",
+          "dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "id": 21
+}

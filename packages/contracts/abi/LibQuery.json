@@ -1,0 +1,208 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "array",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "arrayToList",
+      "outputs": [
+        {
+          "internalType": "LinkedList",
+          "name": "list",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "LinkedList",
+          "name": "list",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "length",
+          "type": "uint256"
+        }
+      ],
+      "name": "listToArray",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "array",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "methodIdentifiers": {
+    "arrayToList(uint256[])": "e87f3be9",
+    "listToArray(bytes32,uint256)": "5c35f12f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"array\",\"type\":\"uint256[]\"}],\"name\":\"arrayToList\",\"outputs\":[{\"internalType\":\"LinkedList\",\"name\":\"list\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"LinkedList\",\"name\":\"list\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"length\",\"type\":\"uint256\"}],\"name\":\"listToArray\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"array\",\"type\":\"uint256[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"arrayToList(uint256[])\":{\"notice\":\"Helper function to turn an array into a linked list\"},\"listToArray(bytes32,uint256)\":{\"notice\":\"Helper function to turn a linked list into an array\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/LibQuery.sol\":\"LibQuery\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@latticexyz/=../../node_modules/@latticexyz/\",\":@manifoldxyz/=../../node_modules/@manifoldxyz/\",\":@opengsn/=../../node_modules/@opengsn/\",\":@openzeppelin/=../../node_modules/openzeppelin-solidity/\",\":@rari-capital/=../../node_modules/@rari-capital/\",\":base64-sol/=../../node_modules/base64-sol/\",\":base64/=../../node_modules/base64-sol/\",\":ds-test/=../../node_modules/ds-test/src/\",\":forge-std/=../../node_modules/forge-std/src/\",\":gsn/=../../node_modules/@opengsn/contracts/src/\",\":hardhat/=../../node_modules/hardhat/\",\":memmove/=../../node_modules/memmove/src/\",\":openzeppelin-solidity/=../../node_modules/openzeppelin-solidity/\",\":royalty-registry/=../../node_modules/@manifoldxyz/royalty-registry-solidity/contracts/\",\":solecs/=../../node_modules/@latticexyz/solecs/src/\",\":solidity-trigonometry/=/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/solidity-trigonometry/src/\",\":solmate/=../../node_modules/@rari-capital/solmate/src/\",\":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/\",\":trig/=../../node_modules/solidity-trigonometry/\"]},\"sources\":{\"../../node_modules/memmove/src/Array.sol\":{\"keccak256\":\"0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1\",\"dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ\"]},\"../../node_modules/memmove/src/LinkedList.sol\":{\"keccak256\":\"0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598\",\"dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc\"]},\"/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/LibQuery.sol\":{\"keccak256\":\"0xb78d437d35151eddd49123b3bf0b50563fff4225df23beb38374c21c395c82dc\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://d669208321aee800dd9c6845894657b0dbc27077bcbd5c53bdaa08cca6b8b35d\",\"dweb:/ipfs/QmaGzbhALNBMFDf2287yk91qaHZUSoCnQfZhwM7KPKJRjT\"]},\"/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol\":{\"keccak256\":\"0x1d6dfb6b170bc1f93b57feae086659ba7c8d816a4cdfd27d7dcb2726e25deed0\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://e6c0a7e50370bc4c6ee78ee2e84eddea44ff5f2ecd3da3d7001de31d54b68e30\",\"dweb:/ipfs/QmTT4gv4ennvHErXZ7ZCiVDyEeznY3y51fAvZ8h8HvrnzU\"]},\"/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/interfaces/IOwned.sol\":{\"keccak256\":\"0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82\",\"dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG\"]},\"/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/interfaces/Query.sol\":{\"keccak256\":\"0x3956cfb4b92afd3eccfea772480deb00ba573629bc0f36db5d948e2d168377cb\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://1aafe610e9283e1d7b1f45ba49cf77c8cf770241eeaa5317171df30b5f114c7d\",\"dweb:/ipfs/QmYShHHJqSfkdY3vcbKS18AuBpBmfwMUzebxZbPpgZDcfq\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "array",
+              "type": "uint256[]"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "arrayToList",
+          "outputs": [
+            {
+              "internalType": "LinkedList",
+              "name": "list",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "LinkedList",
+              "name": "list",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "length",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "listToArray",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "array",
+              "type": "uint256[]"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "arrayToList(uint256[])": {
+            "notice": "Helper function to turn an array into a linked list"
+          },
+          "listToArray(bytes32,uint256)": {
+            "notice": "Helper function to turn a linked list into an array"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@latticexyz/=../../node_modules/@latticexyz/",
+        ":@manifoldxyz/=../../node_modules/@manifoldxyz/",
+        ":@opengsn/=../../node_modules/@opengsn/",
+        ":@openzeppelin/=../../node_modules/openzeppelin-solidity/",
+        ":@rari-capital/=../../node_modules/@rari-capital/",
+        ":base64-sol/=../../node_modules/base64-sol/",
+        ":base64/=../../node_modules/base64-sol/",
+        ":ds-test/=../../node_modules/ds-test/src/",
+        ":forge-std/=../../node_modules/forge-std/src/",
+        ":gsn/=../../node_modules/@opengsn/contracts/src/",
+        ":hardhat/=../../node_modules/hardhat/",
+        ":memmove/=../../node_modules/memmove/src/",
+        ":openzeppelin-solidity/=../../node_modules/openzeppelin-solidity/",
+        ":royalty-registry/=../../node_modules/@manifoldxyz/royalty-registry-solidity/contracts/",
+        ":solecs/=../../node_modules/@latticexyz/solecs/src/",
+        ":solidity-trigonometry/=/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/solidity-trigonometry/src/",
+        ":solmate/=../../node_modules/@rari-capital/solmate/src/",
+        ":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/",
+        ":trig/=../../node_modules/solidity-trigonometry/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/LibQuery.sol": "LibQuery"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../../node_modules/memmove/src/Array.sol": {
+        "keccak256": "0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515",
+        "urls": [
+          "bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1",
+          "dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ"
+        ],
+        "license": "MIT"
+      },
+      "../../node_modules/memmove/src/LinkedList.sol": {
+        "keccak256": "0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1",
+        "urls": [
+          "bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598",
+          "dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc"
+        ],
+        "license": "MIT"
+      },
+      "/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/LibQuery.sol": {
+        "keccak256": "0xb78d437d35151eddd49123b3bf0b50563fff4225df23beb38374c21c395c82dc",
+        "urls": [
+          "bzz-raw://d669208321aee800dd9c6845894657b0dbc27077bcbd5c53bdaa08cca6b8b35d",
+          "dweb:/ipfs/QmaGzbhALNBMFDf2287yk91qaHZUSoCnQfZhwM7KPKJRjT"
+        ],
+        "license": "Unlicense"
+      },
+      "/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol": {
+        "keccak256": "0x1d6dfb6b170bc1f93b57feae086659ba7c8d816a4cdfd27d7dcb2726e25deed0",
+        "urls": [
+          "bzz-raw://e6c0a7e50370bc4c6ee78ee2e84eddea44ff5f2ecd3da3d7001de31d54b68e30",
+          "dweb:/ipfs/QmTT4gv4ennvHErXZ7ZCiVDyEeznY3y51fAvZ8h8HvrnzU"
+        ],
+        "license": "Unlicense"
+      },
+      "/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/interfaces/IOwned.sol": {
+        "keccak256": "0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b",
+        "urls": [
+          "bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82",
+          "dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG"
+        ],
+        "license": "Unlicense"
+      },
+      "/mnt/c/repo/mud-engine/giantleap-dark-seas/node_modules/@latticexyz/solecs/src/interfaces/Query.sol": {
+        "keccak256": "0x3956cfb4b92afd3eccfea772480deb00ba573629bc0f36db5d948e2d168377cb",
+        "urls": [
+          "bzz-raw://1aafe610e9283e1d7b1f45ba49cf77c8cf770241eeaa5317171df30b5f114c7d",
+          "dweb:/ipfs/QmYShHHJqSfkdY3vcbKS18AuBpBmfwMUzebxZbPpgZDcfq"
+        ],
+        "license": "Unlicense"
+      }
+    },
+    "version": 1
+  },
+  "id": 35
+}
